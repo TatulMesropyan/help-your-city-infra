@@ -1,21 +1,17 @@
 variable "region" {
   type    = string
-  default = "us-central-1"
+  default = "eu-central-1"
 }
-variable "access_key" {
-  type    = string
-  default = "AKIAR7LQWUWTD2ISTAI6"
+variable "aws_credential_file" {
+  default = "~/.aws/credentials"
 }
-variable "secret_key" {
-  type    = string
-  default = "us-central-1"
-}
-
 variable "db_name" {
   type    = string
-  default = "help-your-city-db"
+  default = "HYCdb"
 }
-
+variable "aws_config_profile" {
+  default = "start49"
+}
 variable "username" {
   type    = string
   default = "postgres"
